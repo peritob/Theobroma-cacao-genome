@@ -19,4 +19,4 @@
    `
    minimap2 -K 2g -t 8 -ax map-hifi -o $OUTDIR/${prefix_name}.sam -a ${prefix_name}.mmi ccs.filt.fastq.gz
    `
-5. Parental Illumina data was available from previous work within our lab in 2021 by Gurpreet Singh ([https://sydney.primo.exlibrisgroup.com/permalink/61USYD_INST/1c0ug48/alma991032323073205106](url)),  and is available at NCBI accessions: SRR28294700 (maternal S1 raw data) and SRR28294699 (paternal RUQ1347 raw data).
+5. Parental Illumina data was available from previous work within our lab in 2021 by Gurpreet Singh ([https://sydney.primo.exlibrisgroup.com/permalink/61USYD_INST/1c0ug48/alma991032323073205106](url)),  and is available at NCBI accessions: SRR28294700 (maternal S1 raw data) and SRR28294699 (paternal RUQ1347 raw data). This data was trimmed of adaptors and low quality reads using fastp/0.19.6 in default mode ([https://github.com/OpenGene/fastp](url)).
