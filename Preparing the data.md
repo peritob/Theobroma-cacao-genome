@@ -9,7 +9,7 @@
 - Total bases:             30,259,224,851.0
 
 3. Phase Genomics HiC paired-end data (25G) was downloaded on the 15 March 2023. Raw data available at NCBI accession: SRR28294701.
-4. We mapped the data to the _Ceratobasidium theobromae_ genome available on NCBI ([https://www.ncbi.nlm.nih.gov/search/all/?term=GCA_009078325.1_ASM907832v1_genomic.fna](url)) with minimap2/2.21-r1071 to separate plant from pathogen reads.
+4. We mapped the data to the _Ceratobasidium theobromae_ genome available on NCBI ([https://www.ncbi.nlm.nih.gov/search/all/?term=GCA_009078325.1_ASM907832v1_genomic.fna](url)) with minimap2/2.21-r1071 to separate plant from pathogen reads. We then processed .sam to .bam with samtools/1.9.
 
    
    `
@@ -19,4 +19,5 @@
    `
    minimap2 -K 2g -t 8 -ax map-hifi -o $OUTDIR/${prefix_name}.sam -a ${prefix_name}.mmi ccs.filt.fastq.gz
    `
-5. Parental Illumina data was available from previous work within our lab in 2021 by Gurpreet Singh ([https://sydney.primo.exlibrisgroup.com/permalink/61USYD_INST/1c0ug48/alma991032323073205106](url)),  and is available at NCBI accessions: SRR28294700 (maternal S1 raw data) and SRR28294699 (paternal RUQ1347 raw data). This data was trimmed of adaptors and low quality reads using fastp/0.19.6 in default mode ([https://github.com/OpenGene/fastp](url)).
+5. Output from the mapping was VSD_unmapped.bam (20G) and VSD_mapped.bam (27M)
+6. Parental Illumina data was available from previous work within our lab in 2021 by Gurpreet Singh ([https://sydney.primo.exlibrisgroup.com/permalink/61USYD_INST/1c0ug48/alma991032323073205106](url)),  and is available at NCBI accessions: SRR28294700 (maternal S1 raw data) and SRR28294699 (paternal RUQ1347 raw data). This data was trimmed of adaptors and low quality reads using fastp/0.19.6 in default mode ([https://github.com/OpenGene/fastp](url)).
