@@ -1,4 +1,4 @@
-1. PacBio Sequel II ccs.bam file (23G) was downloaded on the 6 March 2023 and filtered of adaptors using HiFiAdapterFilt [https://github.com/sheinasim/HiFiAdapterFilt](url) Data available at NCBI accession: SRR28294702
+1. PacBio Sequel II ccs.bam file (23G) was downloaded on the 6 March 2023 and filtered of adaptors using HiFiAdapterFilt [https://github.com/sheinasim/HiFiAdapterFilt](url). Data available at NCBI accession: SRR28294702
 2. We ran NanoPlot [https://github.com/wdecoster/NanoPlot](url) on filtered data to check statistics.
 - Mean read length:                14,413.4
 - Mean read quality:                   35.6
